@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            height: 100%;
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .box{
+            background-color: aqua;
+            padding: 50px;
+            text-align: center;
+            border-radius: 12px;
+            border: 2px solid black;
+        }
+
+        textarea{
+            width: 350px;
+            height: 155px;
+            border: 2px solid #fff;
+            border-radius: 12px;
+        }
+
+        p{
+            font-size: 25px;
+        }
+      span{
+            font-size: 25px;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box">
+            <h2>Character Count</h2>
+        <textarea name="" id="input-text" placeholder="Type Text...."></textarea>
+        <p>count: <span id="count">0</span></p>
+            </div>
+        </div>
+    
+
+    <script>
+        let input=document.getElementById("input-text");
+        let count=document.getElementById("count");
+
+        input.addEventListener("input",()=>{
+            count.textContent = input.value.length;
+        });
+    </script>
+</body>
+</html>
