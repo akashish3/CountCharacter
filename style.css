@@ -1,0 +1,50 @@
+ body,html{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .container{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .box{
+            background-color: rgb(78, 106, 135);
+            padding: 50px;
+            text-align: center;
+            border: 2px solid pink;
+            border-radius: 20px;
+        }
+
+        #email{
+            height: 30px;
+            width: 340px;
+            background-color: #fff;
+        }
+
+        #fname{
+            height: 30px;
+        }
+
+        #lname{
+            height: 30px;
+        }
+
+        #pass{
+            height: 30px;
+            width: 340px;
+        }
+
+        button{
+            height: 40px;
+            width: 350px;
+            background-color: #333;
+            color: white;
+        }
+
+        button:hover{
+            background-color: black;
+        }
