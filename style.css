@@ -1,50 +1,60 @@
- body,html{
+ html,body{
+            height: 100%;
             margin: 0;
             padding: 0;
-            height: 100%;
         }
+
         .container{
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             height: 100%;
+            background-color: #F8F9FA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
         }
 
         .box{
-            background-color: rgb(78, 106, 135);
+            background-color:#E3F2FD;
             padding: 50px;
             text-align: center;
-            border: 2px solid pink;
-            border-radius: 20px;
+            border-radius: 12px;
+            border: 2px solid black;
         }
 
-        #email{
-            height: 30px;
-            width: 340px;
-            background-color: #fff;
-        }
-
-        #fname{
-            height: 30px;
-        }
-
-        #lname{
-            height: 30px;
-        }
-
-        #pass{
-            height: 30px;
-            width: 340px;
-        }
-
-        button{
-            height: 40px;
+        textarea{
             width: 350px;
-            background-color: #333;
-            color: white;
+            height: 155px;
+            border: 2px solid #fff;
+            border-radius: 12px;
+            padding: 10px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        button:hover{
-            background-color: black;
+        body.dark-mode textarea {
+        background-color: #666;
+        color: #fff;
+        }
+
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .container.dark-mode {
+            background-color: #444;
+        }
+
+        .box.dark-mode {
+            background-color: #555;
+            color: #fff;
+        }
+
+        textarea.dark-mode {
+            background-color: #666;
+            color: #fff;
+        }
+
+        #warning{
+            color: red;
+           display: none;
         }
